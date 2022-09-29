@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff 3%, #ffffff 102%);
+}
+
+.clock {
+    border-radius: 29%;
+    background: linear-gradient(to bottom, #f6d2e1 -15%, #efc7c7 110%);
+    font-family: "Montserrat";
+    border: 5px solid linear-gradient(to bottom, #fdf9ff 1%, #cc99ff 125%);
+    box-shadow: inset 2px 3px 8px 0 rgba(98, 44, 44, 0.1);
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+}
+
+.minute,
+.hour {
+    position: absolute;
+    height: 100px;
+    width: 6px;
+    margin: auto;
+    top: -27%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, #ff1a1a 1%, #0000ff 125%);
+    transform-origin: bottom center;
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px 0 rgba(248, 248, 248, 0.4);
+    z-index: 1;
+}
+
+.minute {
+    position: absolute;
+    height: 130px;
+    width: 4px;
+    top: -38%;
+    left: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    transform: rotate(90deg);
+}
+
+.second {
+    position: absolute;
+    height: 90px;
+    width: 2px;
+    margin: auto;
+    top: -26%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 4px;
+    background: #FF4B3E;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, #49ad25 1%, #0000ff 125%);
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    margin: auto;
+    z-index: 1;
+}
